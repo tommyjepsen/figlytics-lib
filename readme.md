@@ -8,9 +8,9 @@ A simple client library for sending analytics data from your Figma plugin to the
 ## Installation
 
 ```bash
-npm install figlytics # Placeholder: Update package name if different
+npm install figlytics 
 # or
-yarn add figlytics  # Placeholder: Update package name if different
+yarn add figlytics
 ```
 
 ## Initalizing & tracking usage
@@ -18,8 +18,6 @@ yarn add figlytics  # Placeholder: Update package name if different
 Here's how to get started using Figlytics in your Figma plugin's `code.ts` (or similar):
 
 ```typescript
-// In your plugin's main code file (e.g., code.ts)
-/// <reference types="@figma/plugin-typings" />
 
 import { Figlytics } from "figlytics"; // Placeholder: Update package name if different
 
@@ -37,6 +35,7 @@ figma.ui.onmessage = async (params: any) => {
     message: "RELEVANT MESSAGE HERE",
   });
 };
+```
 
 ## Configuration
 
