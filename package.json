@@ -1,0 +1,28 @@
+{
+  "name": "@figlytics/figlytics",
+  "version": "1.0.0",
+  "description": "Analytics library for Figma plugins",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "figma",
+    "plugin",
+    "analytics"
+  ],
+  "author": "Tommy Jepsen",
+  "license": "MIT",
+  "peerDependencies": {
+    "@figma/plugin-typings": "^1.64.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.110.0",
+    "typescript": "^5.3.2"
+  }
+}
