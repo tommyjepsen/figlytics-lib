@@ -212,7 +212,9 @@ export class Figlytics {
       }
 
       try {
-        console.log("Sending event queue", this.eventQueue);
+        if (this.config.isDebug) {
+          console.log("Sending event queue", this.eventQueue);
+        }
         const URL = "https://figlytics.com/api/";
         await fetch(URL + "events", {
           method: "POST",

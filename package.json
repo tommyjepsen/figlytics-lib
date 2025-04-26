@@ -1,6 +1,6 @@
 {
   "name": "figlytics",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Analytics library for Figma plugins",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
