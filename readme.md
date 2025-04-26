@@ -3,7 +3,7 @@
 [![NPM Version](https://img.shields.io/npm/v/figlytics.svg)](https://www.npmjs.com/package/figlytics) <!-- Placeholder: Update package name if different -->
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-A simple client library for sending analytics data from your Figma plugin to the Figlytics service.
+Our client library for sending analytics data from your Figma plugin to the Figlytics service.
 
 ## Installation
 
@@ -15,11 +15,19 @@ yarn add figlytics
 
 ## Initalizing & tracking usage
 
-Here's how to get started using Figlytics in your Figma plugin's `code.ts` (or similar):
+Add the URL to allowedDomains in your manifest.json
+
+```
+"networkAccess": {
+  "allowedDomains": ["https://figlytics.com"]
+},
+```
+
+Here's how to get started using Figlytics in your Figma plugin's `code.ts` (or similar - not UI, but the server):
 
 ```typescript
 
-import { Figlytics } from "figlytics"; // Placeholder: Update package name if different
+import { Figlytics } from "figlytics";
 
 // Initialize Figlytics when your plugin starts in your plugin/server code, not UI code.
 const figlytics = new Figlytics(figma, {
